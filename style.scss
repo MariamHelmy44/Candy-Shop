@@ -1,0 +1,226 @@
+// Variables
+$first-color: #fff;
+$second-color: #179786;
+$third-color: #C32D9D;
+$type-decoration: none;
+$size-width: 100%;
+$display-flex: flex;
+$display-grid: grid;
+$font-family: 'Lobster', sans-serif;
+$letter-spacing: 2px;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background: {
+    image: url(images/back.jpg);
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+.Navbar {
+
+  height: 70px;
+  display: $display-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    width: 160px;
+    height: 90px;
+
+    font: {
+      size: 70px;
+      weight: 400;
+      family: $font-family;
+    }
+
+    letter-spacing: $letter-spacing;
+
+    padding: {
+      left: 95px;
+      top: 50px;
+    }
+
+    color: $first-color;
+  }
+
+  ul {
+    list-style-type: $type-decoration;
+    display: $display-flex;
+    gap: 20px;
+
+    padding: {
+      right: 240px;
+      top: 50px;
+    }
+
+    a {
+      text-decoration: $type-decoration;
+      color: $first-color;
+      font-size: 15px;
+      font-weight: 200;
+    }
+  }
+}
+
+.First-section {
+  background-color: $first-color;
+
+  margin: {
+    top: 50px;
+    bottom: 50px;
+  }
+
+  padding: {
+    bottom: 30px;
+    top: 10px;
+  }
+
+  .Second-Nav {
+    padding-bottom: 15px;
+
+    ol {
+      list-style-type: $type-decoration;
+      display: $display-flex;
+      gap: 35px;
+      margin-left: 105px;
+
+      a {
+        color: $second-color;
+        text-decoration: $type-decoration;
+        margin-top: 20px;
+        text-shadow: 0px 0px 7px black;
+      }
+    }
+  }
+
+  .Cup-Cake {
+    display: $display-grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+
+    img {
+      width: $size-width;
+      height: 350px;
+    }
+  }
+}
+
+%common-hr {
+  color: #a7a2a6;
+  width: 1px;
+
+  margin: {
+    bottom: 40px;
+    top: 20px;
+  }
+}
+
+.Candy {
+  display: $display-grid;
+  grid-template-columns: repeat(2, 40%);
+  column-gap: 30px;
+  justify-content: center;
+
+  img {
+    width: $size-width;
+    height: 200px;
+  }
+
+  hr {
+    width: $size-width*2;
+    @extend %common-hr;
+  }
+}
+
+%common-h2 {
+  color: $first-color;
+  padding-left: 9%;
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
+}
+
+%common-h3 {
+  color: $first-color;
+  font-family: $font-family;
+  letter-spacing: $letter-spacing;
+  margin-top: 10px;
+}
+
+%common-h5 {
+  color: $first-color;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+%common-design {
+  display: $display-grid;
+  grid-template-columns: repeat(4, 25%);
+  padding-left: 9%;
+}
+
+%common-images {
+  width: 175px;
+  height: 175px;
+  border: 5px solid $first-color;
+}
+
+.Third-Section {
+  h2 {
+    @extend %common-h2;
+  }
+
+  .feature {
+    @extend %common-design;
+
+    img {
+      @extend %common-images;
+    }
+  }
+
+  .kinds {
+    @extend %common-design;
+
+    h5 {
+      @extend %common-h5;
+    }
+  }
+
+  .price {
+    @extend %common-design;
+
+    h3 {
+      @extend %common-h3;
+      margin-bottom: 0px;
+    }
+  }
+
+  hr {
+    width: 82%;
+    @extend %common-hr;
+  }
+}
+
+footer {
+  display: $display-grid;
+  grid-template-columns: repeat(4, 20%);
+  padding-left: 13%;
+  background-color: $first-color;
+  padding-top: 30px;
+
+  h3 {
+    color: $third-color;
+
+    font: {
+      family: $font-family;
+      weight: 600;
+      size: 20px;
+    }
+
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar h1 {
+  width: 160px;
+  height: 90px;
+  font-size: 70px;
+  font-weight: 400;
+  font-family: "Lobster", sans-serif;
+  letter-spacing: 2px;
+  padding-left: 95px;
+  padding-top: 50px;
+  color: #fff;
+}
+
+.Navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 240px;
+  padding-top: 50px;
+}
+
+.Navbar ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.First-section {
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.First-section .Second-Nav {
+  padding-bottom: 15px;
+}
+
+.First-section .Second-Nav ol {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+  margin-left: 105px;
+}
+
+.First-section .Second-Nav ol a {
+  color: #179786;
+  text-decoration: none;
+  margin-top: 20px;
+  text-shadow: 0px 0px 7px black;
+}
+
+.First-section .Cup-Cake {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  justify-content: space-between;
+}
+
+.First-section .Cup-Cake img {
+  width: 100%;
+  height: 350px;
+}
+
+.Third-Section hr,
+.Candy hr {
+  color: #a7a2a6;
+  width: 1px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.Candy {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.Candy img {
+  width: 100%;
+  height: 200px;
+}
+
+.Candy hr {
+  width: 200%;
+}
+
+.Third-Section h2 {
+  color: #fff;
+  padding-left: 9%;
+  font-family: "Lobster", sans-serif;
+  letter-spacing: 2px;
+}
+
+.Third-Section .price h3 {
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.Third-Section .kinds h5 {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.Third-Section .price,
+.Third-Section .kinds,
+.Third-Section .feature {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding-left: 9%;
+}
+
+.Third-Section .feature img {
+  width: 175px;
+  height: 175px;
+  border: 5px solid #fff;
+}
+
+.Third-Section .price h3 {
+  margin-bottom: 0px;
+}
+
+.Third-Section hr {
+  width: 82%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  padding-left: 13%;
+  background-color: #fff;
+  padding-top: 30px;
+}
+
+footer h3 {
+  color: #C32D9D;
+  font-family: "Lobster", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
